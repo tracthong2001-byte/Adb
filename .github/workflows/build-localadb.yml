@@ -21,7 +21,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          unzip -q LocalADB-Manager-Build-Ready-v1.0.1.zip -d project
+          unzip -q LocalADB-Manager-Android-Source.zip -d project
           test -f project/LocalADB-Manager/app/build.gradle
 
       - name: Set up JDK 17
