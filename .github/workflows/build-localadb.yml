@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'LocalADB-Manager-Build-Ready-v1.0.1.zip'
+      - 'LocalADB-Manager-Android-Source.zip'
       - '.github/workflows/build-localadb.yml'
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-     - name: Set up Android SDK
+      - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
           packages: platform-tools
